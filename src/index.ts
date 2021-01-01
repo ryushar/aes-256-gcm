@@ -12,8 +12,6 @@ class AES256GCM {
   }
 
   private _encrypt(data: Buffer, key: Buffer, iv: Buffer): Buffer {
-    if (key.length !== 32)
-      throw new Error("Invalid key buffer size, should be equal to 32 bytes.");
     const cipher = createCipheriv("aes-256-gcm", key, iv);
     const chunks: [Buffer, Buffer] = [cipher.update(data), cipher.final()];
     return Buffer.concat([iv, cipher.getAuthTag(), chunks[0], chunks[1]]);
@@ -39,7 +37,7 @@ class AES256GCM {
     return new Promise((resolve, reject) => {
       randomBytes(byteCount, (error, buffer) => {
         if (error === null) resolve(buffer);
-        else reject("Failed to generate random bytes.");
+        else reject(error);
       });
     });
   }
