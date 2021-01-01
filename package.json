@@ -1,0 +1,30 @@
+{
+  "name": "@2cxxlife/aes-256-gcm",
+  "version": "1.0.0",
+  "description": "A package for nodejs to simplify aes-256-gcm encryption and decryption.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "dev": "npx tsc --watch",
+    "build": "npx tsc"
+  },
+  "author": "2cxxlife",
+  "license": "Unlicense",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "@types/node": "^14.14.17"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.11.1",
+    "@typescript-eslint/parser": "^4.11.1",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3"
+  }
+}

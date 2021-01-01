@@ -1,0 +1,34 @@
+{
+  "include": [
+    "src/**/*.ts"
+  ],
+  "compilerOptions": {
+    "allowJs": false,
+    "composite": true,
+    "isolatedModules": true,
+    "lib": [
+      "ES2020"
+    ],
+    "module": "CommonJS",
+    "outDir": "lib",
+    "rootDir": "./src/",
+    "target": "ES2017",
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": false,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false,
+    "forceConsistentCasingInFileNames": true,
+    "newLine": "lf",
+    "resolveJsonModule": false,
+    "skipLibCheck": true,
+    "watch": false
+  }
+}
