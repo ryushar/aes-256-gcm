@@ -32,7 +32,7 @@ const buffer = Buffer.from(text, "utf8");
 
 const encrypted_buffer = AES256GCM.encryptSync(buffer, SECRET_KEY);
 
-const decrypted_buffer = AES256GCM.encryptSync(encrypted_buffer, SECRET_KEY);
+const decrypted_buffer = AES256GCM.decrypt(encrypted_buffer, SECRET_KEY);
 
 console.log(decrypted_buffer.toString("utf8")); // "My secret text"
 ```
