@@ -4,9 +4,9 @@ A typed package for nodejs to simplify aes-256-gcm encryption and decryption.
 
 ### Install
 
-`npm install @2cxxlife/aes-256-gcm`  
+`npm install 2cxxlife/aes-256-gcm`  
 or  
-`yarn add @2cxxlife/aes-256-gcm`
+`yarn add 2cxxlife/aes-256-gcm`
 
 ### Usage
 
