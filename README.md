@@ -4,16 +4,16 @@ A typed package for nodejs to simplify aes-256-gcm encryption and decryption.
 
 ### Install
 
-`npm install 2cxxlife/aes-256-gcm`  
+`npm install ryushar/aes-256-gcm`  
 or  
-`yarn add 2cxxlife/aes-256-gcm`
+`yarn add ryushar/aes-256-gcm`
 
 ### Example
 
 ```ts
 // commonjs
-// const AES256GCM = require("@2cxxlife/aes-256-gcm").default;
-import AES256GCM from "@2cxxlife/aes-256-gcm";
+// const AES256GCM = require("@ryushar/aes-256-gcm").default;
+import AES256GCM from "@ryushar/aes-256-gcm";
 
 const SECRET_KEY = AES256GCM.createKey(); // or supply your own 32 byte key buffer
 
